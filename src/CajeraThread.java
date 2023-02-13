@@ -7,12 +7,38 @@ public class CajeraThread extends Thread {
 	private long initialTime;
 
 	// Constructor, getter & setter
+	public CajeraThread(){
 
+	}
 	public CajeraThread(String snombre, Cliente ccliente, long initialTime2) {
-        nombre = snombre;
-        cliente = ccliente;
-        initialTime = initialTime2;
+        this.nombre = snombre;
+        this.cliente = ccliente;
+        this.initialTime = initialTime2;
     }
+
+	public String getNombre(){
+		return nombre;
+	}
+
+	public void setNombre(String snombre){
+		this.nombre = snombre;
+	}
+
+	public long getInitialTime(){
+		return initialTime;
+	}
+
+	public void setInitialTime(long initialTime2){
+		this.initialTime = initialTime2;
+	}
+
+	public Cliente getCliente(){
+		return cliente;
+	}
+
+	public void setCliente(Cliente ccliente){
+		this.cliente = ccliente;
+	}
 
     @Override
 	public void run() {

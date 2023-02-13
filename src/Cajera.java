@@ -3,10 +3,20 @@ public class Cajera {
 	private String nombre;
 
 	// Constructor, getter y setter
+	public Cajera(){
 
+	}
 	public Cajera(String snombre) {
-        nombre = snombre;
+        this.nombre = snombre;
     }
+
+	public String getNombre(){
+		return nombre;
+	}
+
+	public void setNombre(String snombre){
+		this.nombre = snombre;
+	}
 
 
     public void procesarCompra(Cliente cliente, long timeStamp) {
